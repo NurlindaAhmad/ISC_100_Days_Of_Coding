@@ -1,0 +1,27 @@
+package Day4;
+
+import java.util.Scanner;
+
+public class Hari4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Masukkan nama anda:");
+        String nama = sc.nextLine();
+        
+        System.out.print("Masukkan nim anda :");
+        String nim = sc.nextLine();
+        
+        System.out.print("Masukkan kelas anda: ");
+        String kelas = sc.nextLine();
+        
+        System.out.println("nama   :" + nama);
+        System.out.println("nim    :" + nim);
+        System.out.println("kelas  :" + kelas);
+        
+        sc.close();
+    }
+    
+}
+                
+    
