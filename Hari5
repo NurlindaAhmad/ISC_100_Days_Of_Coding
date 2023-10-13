@@ -1,0 +1,37 @@
+package Day5;
+
+import java.util.Scanner;
+
+public class Hari4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        
+        System.out.print("Masukkan nomor peserta: ");
+        String noPeserta = sc.nextLine();
+        
+        System.out.print("Masukkan nama: ");
+        String nama = sc.nextLine();
+        
+        System.out.print("Masukkan jenis kelamin: ");
+        String jenisKelamin = sc.nextLine();
+        
+        System.out.print("Masukkan umur: ");
+        int umur = sc.nextInt();
+        
+        System.out.print("Masukkan berat badan: ");
+        double beratBadan = sc.nextDouble();
+        
+        System.out.print("Masukkan status keaktifan: ");
+        boolean aktif = sc.nextBoolean();
+        
+        System.out.println("No peserta    :" +  noPeserta);
+        System.out.println("Nama          :" + nama);
+        System.out.println("Jenis kelamin :" + jenisKelamin);
+        System.out.println("Umur          :" + umur);
+        System.out.println("Berat badan   :" + beratBadan);
+        System.out.println("Aktif         :" + aktif);
+        
+        sc.close();
+    }
+    
+}
