@@ -1,0 +1,39 @@
+package Day6;
+
+
+public class Hari6 {
+    public static void main(String[] args) {
+        //penjumlahan
+        int nilai1 = 8;
+        int nilai2 = 4;
+        int hasil;  
+        
+        hasil = nilai1+nilai2;
+        System.out.println(nilai1 + "+" + nilai2 + "=" +hasil);
+        
+        //pengurangan
+          
+        hasil = nilai1 - nilai2;
+        System.out.println(nilai1 + "-" + nilai2 + "=" + hasil);
+        
+        //perkalian
+        hasil = nilai1 * nilai2;
+        System.out.println(nilai1 + "*" + nilai2 + "=" + hasil);
+        
+       //pembagian
+        float nilai3 = 20;
+        float nilai4 = 2;
+        float hasil1;
+        
+        hasil1 = nilai3 / nilai4;
+        System.out.println(nilai3 + "/" + nilai4 + "=" + hasil1);
+        
+        //modulus
+        hasil1 = nilai3 % nilai4;
+        System.out.println(nilai3 + "%" + nilai4 + "=" + hasil1);
+        
+        
+        
+    }
+    
+}
