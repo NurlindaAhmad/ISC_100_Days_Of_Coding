@@ -1,0 +1,29 @@
+package Day7;
+
+public class Hari7 {
+    public static void main(String[] args) {
+        
+        int nilai;
+        int nilai1;
+        
+        nilai = 4;
+        nilai1 = 25;
+        
+        nilai1 += nilai;
+        System.out.println(nilai1);
+        
+        nilai1 -= nilai;
+        System.out.println(nilai1);
+        
+        nilai1 *= nilai;
+        System.out.println(nilai1);
+        
+        nilai1 /= nilai;
+        System.out.println(nilai1);
+        
+        nilai1 %= nilai;
+        System.out.println(nilai1);
+        
+    }  
+    
+}
