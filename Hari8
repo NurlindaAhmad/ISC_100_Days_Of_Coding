@@ -1,0 +1,30 @@
+package Day8;
+
+
+public class Hari8 {
+    public static void main(String[] args) {
+        int angka = 10;
+        int angka1 = 5;
+        
+        boolean hasil;
+        
+        hasil = angka == angka1;
+        System.out.println(hasil);
+        
+        hasil = angka != angka1;
+        System.out.println(hasil);
+        
+        hasil = angka > angka1;
+        System.out.println(hasil);
+        
+        hasil = angka >= angka1;
+        System.out.println(hasil);
+        
+        hasil = angka < angka1;
+        System.out.println(hasil);
+        
+        hasil = angka <= angka1;
+        System.out.println(hasil);     
+    }
+    
+}
