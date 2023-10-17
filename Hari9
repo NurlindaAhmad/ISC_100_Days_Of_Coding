@@ -1,21 +1,29 @@
 package Day9;
 
-import java.util.Scanner;
-
 
 public class Hari9 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner (System.in);
         
-        System.out.print("Masukkan panjang :");
-        double panjang = sc.nextDouble();
+        boolean b = true;
+        boolean c = false;
+        boolean a = b||c;
         
-        System.out.print("Masukkan lebar :");
-        double lebar = sc.nextDouble();
+        System.out.println(b+ "||"+ c + "="+a);
         
-        double luas = panjang * lebar;
+        boolean x = true;
+        boolean y = true;
+        boolean f = x && y;
+        System.out.println(x+ "&&"+ y + "="+f);
         
-        System.out.println("luas persegi panjang adalah :" + luas);   
+        boolean w = false;
+        boolean z = true;
+        boolean q = w || z;
+        System.out.println(w+ "||"+ z + "="+q);
+        
+        boolean g = false;
+        boolean h = false;
+        boolean j = g && h;
+        System.out.println(g+ "&&"+ h + "="+j);     
+       
     }
-    
 }
