@@ -1,0 +1,26 @@
+package Day12;
+
+import java.util.Scanner;
+
+
+public class Hari13 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        
+        System.out.print("jumlah uang anda:");
+        double jumlahUang = sc.nextDouble();
+        
+        System.out.print("Harga barang yang anda beli:");
+        double HargaBarang = sc.nextDouble();
+        
+        double sisaUang;
+        
+        sisaUang = jumlahUang - HargaBarang;
+        System.out.println("Sisa jumlah uang dari pembelian anda : "+ sisaUang);
+        
+        sc.close();
+        
+        
+    }
+    
+}
