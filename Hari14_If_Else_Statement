@@ -1,0 +1,19 @@
+package Day12;
+
+public class Hari14 {
+    public static void main(String[] args) {
+        
+        int nilai = 20;
+        
+        System.out.println("angka =" + nilai);
+        
+        if (nilai > 15){    
+            System.out.println("nilai lebih besar dari 15");
+        }else {
+            System.out.println("nilai lebih kecil dari 15");
+        }
+        
+        
+    }
+    
+}
