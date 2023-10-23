@@ -1,0 +1,23 @@
+package Day12;
+
+
+public class Hari15 {
+    public static void main(String[] args) {
+        int nilai = 20;
+        int nilai1= 10;
+        
+        if (nilai > nilai1){    
+            System.out.println(nilai + "nilai lebih besar dari" + nilai1);
+            
+        }else if (nilai >= nilai1){
+            System.out.println(nilai + "nilai lebih besar sama dengan" + nilai1);
+            
+        }else if (nilai <= nilai1){
+            System.out.println(nilai + "nilai lebih kecil sama dengan" + nilai1);
+ 
+        }else{
+            System.out.println("nilai lebih kecil dari nilai1");
+        }
+    
+    }
+}
