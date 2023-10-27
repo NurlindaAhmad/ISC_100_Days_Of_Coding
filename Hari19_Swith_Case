@@ -1,0 +1,39 @@
+package Latihan;
+
+import java.util.Scanner;
+
+public class Hari19 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Masukkan angka : ");
+        int angka = sc.nextInt();
+        String a;
+
+        switch (angka) {
+            case 3:
+                a = "tiga";
+                break;
+            case 4:
+                a = "empat";
+                break;
+            case 5:
+                a = "lima";
+                break;
+            case 6:
+                a = "enam";
+                break;
+            case 7:
+                a = "tujuh";
+                break;
+            default:
+                a = " angka tidak valid";
+                break;
+        }
+        System.out.println("angka ini adalah" + a);
+
+        sc.close();
+    }
+
+}
