@@ -1,0 +1,53 @@
+package Linda;
+
+import java.util.Scanner;
+
+public class Hari20 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Pilih bentuk geometri:");
+        System.out.println(" Persegi");
+        System.out.println(" Segitiga");
+        System.out.println(" Lingkaran");
+        System.out.println(" Persegi Panjang");
+        System.out.print("Masukkan angka : ");
+        int pilihan = sc.nextInt();
+        double luas = 0;
+
+        switch (pilihan) {
+            case 1:
+                System.out.print("Masukkan panjang sisi persegi: ");
+                double sisiPersegi = sc.nextDouble();
+                luas = sisiPersegi * sisiPersegi;
+                break;
+            case 2:
+                System.out.print("Masukkan alas segitiga: ");
+                double alasSegitiga = sc.nextDouble();
+                System.out.print("Masukkan tinggi segitiga: ");
+                double tinggiSegitiga = sc.nextDouble();
+                luas = 0.5 * alasSegitiga * tinggiSegitiga;
+                break;
+            case 3:
+                System.out.print("Masukkan jari-jari lingkaran: ");
+                double jariJari = sc.nextDouble();
+                luas = Math.PI * jariJari * jariJari;
+                break;
+            case 4:
+                System.out.print("Masukkan panjang persegi panjang: ");
+                double panjang = sc.nextDouble();
+                System.out.print("Masukkan lebar persegi panjang: ");
+                double lebar = sc.nextDouble();
+                luas = panjang * lebar;
+                break;
+            default:
+                System.out.println("Pilihan tidak valid.");
+                sc.close();
+                return;
+        }
+
+        System.out.println("Luas bentuk geometri yang dipilih: " + luas);
+        sc.close();
+    }
+}
