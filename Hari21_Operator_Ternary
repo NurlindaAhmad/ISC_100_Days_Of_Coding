@@ -1,0 +1,18 @@
+
+package Linda3;
+
+import java.util.Scanner;
+
+public class Hari21 {
+    public static void main(String[] args) {
+         Scanner sc = new Scanner(System.in);
+         
+         System.out.print("Masukkan tinggi badan: ");
+         double tinggiBadan = sc.nextDouble();
+         
+         double ukuran = (tinggiBadan > 0) ? tinggiBadan / 100.0 : 0.0;
+         
+          System.out.println("Tinggi badan Anda adalah " + ukuran + " meter.");
+    }
+    
+}
