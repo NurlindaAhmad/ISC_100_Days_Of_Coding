@@ -1,0 +1,23 @@
+package Linda1;
+
+import java.util.Scanner;
+
+public class Hari22 {
+    public static void main(String[] args) {
+          Scanner inputScanner = new Scanner(System.in);
+          
+        System.out.print("Masukkan angka: ");
+        int angka = inputScanner.nextInt();
+        
+        if (angka % 2 == 1) { 
+            int hasil = angka + 1;
+            System.out.println(angka + " adalah bilangan ganjil. Angka + 1 = " + hasil);
+        } else {
+            int hasil = angka + 2;
+            System.out.println(angka + " adalah bilangan genap. Angka + 2 = " + hasil);
+        }
+        
+          inputScanner.close();
+    }
+    
+}
