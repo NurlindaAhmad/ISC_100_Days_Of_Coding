@@ -10,10 +10,14 @@ public class Hari26 {
         System.out.println("masukkan jumlah motor: ");
         int motor = sc.nextInt();
 
-        for (int i = 2; i <= motor; i++) {
-            System.out.println(1 + "motor");
+        System.out.println("masukkan kata:");
+        String kata = sc.next();
+
+        for (int i = 1; i <= motor; i++) {
+            System.out.println(kata);
 
         }
 
     }
 }
+
