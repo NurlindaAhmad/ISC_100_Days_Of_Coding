@@ -1,0 +1,19 @@
+package Day9;
+
+import java.util.Scanner;
+
+public class Hari26 {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("masukkan jumlah motor: ");
+        int motor = sc.nextInt();
+
+        for (int i = 2; i <= motor; i++) {
+            System.out.println(1 + "motor");
+
+        }
+
+    }
+}
