@@ -1,0 +1,22 @@
+
+package Day9;
+
+public class Hari28 {
+     public static void main(String[] args) {
+
+        int jumlahBintang = 5;
+
+        for (int a = 1; a <= jumlahBintang; a++) {
+            for (int j = 1; j <= jumlahBintang; j++) {
+                System.out.print("*");
+
+            }
+            System.out.println("");
+
+        }
+
+    }
+
+}
+
+    
