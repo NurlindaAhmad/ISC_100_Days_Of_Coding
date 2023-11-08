@@ -1,0 +1,17 @@
+package Day9;
+
+import java.util.Scanner;
+
+public class Hari31 {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("masukkan angka : ");
+        int n = sc.nextInt();
+
+        int a = n * n;
+        System.out.println(a);
+    }
+
+}
