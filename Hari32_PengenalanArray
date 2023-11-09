@@ -1,0 +1,20 @@
+package Commit;
+
+public class Hari32 {
+
+    public static void main(String[] args) {
+
+        int umur[] = new int[4];
+        umur[0] = 19;
+        umur[1] = 20;
+        umur[2] = 25;
+        umur[3] = 30;
+
+        System.out.println("umur saya adalah " + umur[0]);
+
+        int i = umur.length;
+        System.out.println(i);
+
+    }
+
+}
