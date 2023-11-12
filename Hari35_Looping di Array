@@ -1,0 +1,23 @@
+
+package Day9;
+
+public class Hari35 {
+    public static void main(String[] args) {
+         
+        int[] numbers = {1, 2, 3, 4, 5};
+
+       
+        System.out.println("Looping menggunakan for:");
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i]);
+        }
+
+       
+        System.out.println("\nLooping menggunakan enhanced for:");
+        for (int num : numbers) {
+            System.out.println(num);
+    }
+        
+    }
+    
+}
