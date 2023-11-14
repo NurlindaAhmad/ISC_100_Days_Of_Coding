@@ -1,0 +1,31 @@
+package Day9;
+
+import java.util.Arrays;
+
+public class Hari37 {
+
+    public static void main(String[] args) {
+
+        int[] array = {5, 8, 3, 12, 7};
+
+        System.out.println("Isi array: " + Arrays.toString(array));
+
+        int maksimum = cariNilaiMaksimum(array);
+        System.out.println("Nilai maksimum dalam array: " + maksimum);
+
+        Arrays.sort(array);
+        System.out.println("Array setelah diurutkan: " + Arrays.toString(array));
+    }
+
+    private static int cariNilaiMaksimum(int[] array) {
+        int maksimum = array[0];
+
+        for (int nilai : array) {
+            if (nilai > maksimum) {
+                maksimum = nilai;
+            }
+        }
+
+        return maksimum;
+    }
+}
