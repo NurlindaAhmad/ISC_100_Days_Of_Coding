@@ -1,7 +1,9 @@
+package Commit;
+
 import java.util.Scanner;
 
-public class HitungRataSumDinamis {
-    public static void main(String[] args) {
+public class day41 {
+public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("");
@@ -21,5 +23,5 @@ public class HitungRataSumDinamis {
         System.out.println("SUM : " + sum);
 
         sc.close();
-    }
+    }    
 }
