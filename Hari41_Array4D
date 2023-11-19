@@ -1,0 +1,40 @@
+package Day9;
+
+import java.util.Random;
+
+public class Hari41 {
+
+    public static void main(String[] args) {
+       int dimensi1 = 5;
+        int dimensi2 = 4;
+        int dimensi3 = 4;
+        int dimensi4 = 5;
+
+        
+        int[][][][] array = new int[dimensi1][dimensi2][dimensi3][dimensi4];
+        Random nilai = new Random();
+
+        for (int i = 0; i < dimensi1; i++) {
+            for (int j = 0; j < dimensi2; j++) {
+                for (int k = 0; k < dimensi3; k++) {
+                    for (int l = 0; l < dimensi4; l++) {
+                        array[i][j][k][l] = nilai.nextInt(50);
+                    }
+                }
+            }
+        }
+
+        for (int i = 0; i < dimensi1; i++) {
+            for (int j = 0; j < dimensi2; j++) {
+                for (int k = 0; k < dimensi3; k++) {
+                    for (int l = 0; l < dimensi4; l++) {
+                        System.out.print(array[i][j][k][l] + " ");
+                    }
+                    System.out.println();
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
+    }
+}
