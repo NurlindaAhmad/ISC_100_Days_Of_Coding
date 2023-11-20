@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("");
+        int nilai = scanner.nextInt();
+
+        int hasilNilai= 0;
+
+        
+        for (int i = 1; i <= nilai; i++) {
+            System.out.print(i);
+            hasilNilai += i;
+
+            if (i < nilai) {
+                System.out.print(" + ");
+            }
+        }
+
+        System.out.println(" = " + hasilNilai);
+    }
+}
