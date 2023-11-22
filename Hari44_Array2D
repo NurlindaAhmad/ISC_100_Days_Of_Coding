@@ -1,0 +1,54 @@
+package Day9;
+
+public class Hari44 {
+
+    public static void main(String[] args) {
+
+        int[][] array1 = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+        int[][] array2 = {
+            {9, 8, 7},
+            {6, 5, 4},
+            {3, 2, 1}
+        };
+
+        System.out.println("Array 1:");
+        printArray(array1);
+
+        System.out.println("Array 2:");
+        printArray(array2);
+
+        int[][] hasilPenjumlahan = tambahMatriks(array1, array2);
+        System.out.println("Penjumlahan:");
+        printArray(hasilPenjumlahan);
+
+    }
+
+    public static void printArray(int[][] array) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                System.out.print(array[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static int[][] tambahMatriks(int[][] matriks1, int[][] matriks2) {
+        int baris = matriks1.length;
+        int kolom = matriks1[0].length;
+        int[][] hasil = new int[baris][kolom];
+
+        for (int i = 0; i < baris; i++) {
+            for (int j = 0; j < kolom; j++) {
+                hasil[i][j] = matriks1[i][j] + matriks2[i][j];
+            }
+        }
+
+        return hasil;
+
+    }
+}
