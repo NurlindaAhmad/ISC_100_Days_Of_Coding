@@ -1,0 +1,15 @@
+public class Main {
+	public static void main(String[] args) {
+	
+        String[] namaHari = {"Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu"};
+
+        System.out.println("Hari pertama: " + namaHari[0]);
+        System.out.println("Hari ketujuh: " + namaHari[6]);
+
+        
+        System.out.println("Semua hari:");
+        for (int i = 0; i < namaHari.length; i++) {
+            System.out.println(namaHari[i]);
+        }
+    }
+}
