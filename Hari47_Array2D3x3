@@ -1,0 +1,35 @@
+package Day9;
+
+import java.util.Scanner;
+
+public class Hari47 {
+
+    public static void main(String[] args) {
+
+        int[][] array2D = new int[3][3];
+
+        isi(array2D);
+
+        System.out.println("Array 2:");
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print(array2D[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void isi(int[][] array) {
+        Scanner sc = new Scanner(System.in);
+
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print("Masukkan nilai untuk array2D [" + i + "][" + j + "]: ");
+                int nilai = sc.nextInt();
+                array[i][j] = nilai;
+            }
+        }
+
+        sc.close();
+    }
+}
