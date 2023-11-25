@@ -1,0 +1,26 @@
+public class Main {
+	public static void main(String[] args) {
+	
+        int y, x;
+
+        x = 2;
+        y = nilai(x);
+        printResult(x, y);
+
+        x = 15;
+        y = nilai(x);
+        printResult(x, y);
+
+        x = 30;
+        y = nilai(x);
+        printResult(x, y);
+    }
+
+    public static int nilai(int input) {
+        return (input + 5) * (input - 3); 
+    }
+
+    public static void printResult(int x, int y) {
+        System.out.println("x = " + x + ", y = " + y);
+    }
+}
