@@ -1,0 +1,30 @@
+
+package Commit;
+
+import java.util.Scanner;
+
+public class live2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("masukkan nilai :");
+        int a = sc.nextInt();
+        int sum = 0;
+
+        System.out.println("deret angkanya:");
+
+        for (int i = 2; i <= a; i  +=2) {
+            sum += i;
+            System.out.println(i + "");
+
+        }
+        int count = a / 2;
+        int average = (int) sum / a;
+
+        System.out.println("Sum :" + sum);
+        System.out.println("average : " + average);
+    }
+
+}
+    
+
