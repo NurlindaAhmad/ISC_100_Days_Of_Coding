@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+	
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Masukkan jumlah angka: ");
+        int jumlah = sc.nextInt();
+
+        int sum = 0;
+
+        for (int i = 1; i <= jumlah; i++) {
+            System.out.print("angka ke-" + i + ": ");
+            int angka = sc.nextInt();
+            sum += angka;
+        }
+
+        int avg = (int) sum / jumlah;
+
+        System.out.println("Sum: " + sum);
+        System.out.println("Avg: " + avg);
+
+        sc.close();
+    }
+}
