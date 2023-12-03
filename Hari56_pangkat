@@ -1,0 +1,14 @@
+public class Main {
+	public static void main(String[] args) {
+		
+        int n = 10; 
+        int m = 2;
+
+        double hasil = hitungPangkat(n, m);
+        System.out.println("Hasil " + n + "^" + m + " dalam bentuk desimal: " + hasil);
+    }
+
+    public static double hitungPangkat(int n, int m) {
+        return Math.pow(n, m);
+    }
+}
