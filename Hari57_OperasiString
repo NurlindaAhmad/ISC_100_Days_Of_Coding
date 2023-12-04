@@ -1,0 +1,13 @@
+public class Main {
+	public static void main(String[] args) {
+		
+        String kalimat = "Saya suka bermain game";
+        
+        int panjang = kalimat.length();
+        System.out.println("Panjang string: " + panjang);
+
+        String tambahan = " dan berenang";
+        String kalimatBaru = kalimat + tambahan;
+        System.out.println("Kalimat: " + kalimatBaru);
+    }
+}
