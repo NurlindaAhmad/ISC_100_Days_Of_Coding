@@ -1,0 +1,26 @@
+import java.util.Arrays;
+public class Main {
+	public static void main(String[] args) {
+	
+        char[] characters = {'1', '2', '3', '4', '5'};
+        System.out.println(Arrays.toString(characters));
+
+        String text = "12345";
+        printAddress("text", text);
+
+        characters[0] = '0';
+        System.out.println(Arrays.toString(characters));
+
+        text = "0" + text.substring(1, 5);
+        System.out.println(text);
+
+        printAddress("text", text);
+    }
+
+    private static void printAddress(String name, String data) {
+        int address = System.identityHashCode(data);
+        System.out.println(name + " = " + data + "\t|| address = " + Integer.toHexString(address));
+    }
+}
+
+	
