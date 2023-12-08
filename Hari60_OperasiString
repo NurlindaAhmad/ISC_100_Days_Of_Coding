@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+	       
+        String kalimat = "Hari ini hujan deras";
+        
+        System.out.println(kalimat.charAt(8));
+        
+        String kata = kalimat.substring(5, 10);
+        System.out.println(kata);
+
+        String kalimat1 = kata + " petir";
+        System.out.println(kalimat1);
+
+        kata = kata + " banjir";
+        System.out.println(kata);
+
+        int jumlah = 15;
+        String kalimat2 = kata + " " + jumlah; 
+        System.out.println(kalimat2);
+    }
+}
