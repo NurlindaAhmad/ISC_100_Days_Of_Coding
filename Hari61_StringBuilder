@@ -1,0 +1,19 @@
+public class Main {
+	public static void main(String[] args) {
+
+        StringBuilder builder = new StringBuilder("teknologi");
+        printData(builder);
+
+        builder.append(" membentuk masa depan");
+        printData(builder);
+    }
+
+    private static void printData(StringBuilder dataBuilder) {
+        System.out.println("Data = " + dataBuilder);
+        System.out.println("Panjang = " + dataBuilder.length());
+        System.out.println("Kapasitas = " + dataBuilder.capacity());
+
+        int addressBuilder = System.identityHashCode(dataBuilder);
+        System.out.println("Alamat = " + Integer.toHexString(addressBuilder));
+    }
+}
