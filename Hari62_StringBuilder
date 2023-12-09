@@ -1,0 +1,14 @@
+public class Main {
+	public static void main(String[] args) {
+	    
+        StringBuilder stringBuilder = new StringBuilder("Pemrograman");
+
+        stringBuilder.replace(0, 3, "Java");
+
+        System.out.println("StringBuilder setelah penggantian: " + stringBuilder.toString());
+
+        stringBuilder.reverse();
+
+        System.out.println("StringBuilder setelah pembalikan: " + stringBuilder.toString());
+    }
+}
