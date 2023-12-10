@@ -1,0 +1,16 @@
+public class Main {
+	public static void main(String[] args) {
+
+        String namaProduk = "Laptop";
+        double harga = 1200.50;
+
+        System.out.println("Produk " + namaProduk + " memiliki harga $" + harga);
+
+        System.out.printf("Produk %s memiliki harga $%.2f\n", namaProduk, harga);
+
+
+        System.out.printf("produk: %s, Harga: $%.2f\n", namaProduk, harga);
+
+
+    }
+}
