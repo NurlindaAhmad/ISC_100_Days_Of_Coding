@@ -1,0 +1,31 @@
+public class Main {
+	public static void main(String[] args) {
+	
+        try {
+            lakukanOperasi();
+        } catch (CustomException e) {
+            System.out.println("Menangkap CustomException: " + e.getMessage());
+        }
+    }
+
+    public static void lakukanOperasi() throws CustomException {
+        try {
+            int hasil = bagi(10, 0);
+            System.out.println("Hasil: " + hasil);
+        } catch (ArithmeticException e) {
+            throw new CustomException("CustomException: Pembagian oleh nol", e);
+        }
+    }
+
+    public static int bagi(int num1, int num2) {
+        return num1 / num2;
+    }
+}
+
+class CustomException extends Exception {
+    public CustomException(String message, Throwable cause) {
+        super(message, cause);
+    }
+}
+
+	
