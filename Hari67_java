@@ -1,0 +1,67 @@
+package Belajar;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class writeFile {
+
+    public static void main(String[] args) {
+        String conteng = "Rahma";
+        String url = "aiot.txt";
+        boolean sts = tulisFile(url,conteng);
+        System.out.println(sts);
+        
+        String isinya = bacaFile (url);
+        System.out.println(isinya);
+
+    }
+
+    public static String bacaFile(String url) { 
+        String isiFile = null; // nilai awalnya null 
+
+        // class membaca file
+        try {
+            FileReader fr = new FileReader(url);
+            BufferedReader br = new BufferedReader(fr);
+
+            String baris;
+            StringBuffer sb = new StringBuffer();
+
+            while ((baris = br.readLine()) != null) {
+                sb.append(baris);
+                //isiFile += baris;
+
+            }
+            br.close();
+            fr.close();
+            isiFile = sb.toString();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        //ketika ia gagal membaca file ia akan mengembalikan nilai awalnya
+
+        return isiFile;
+    }
+
+    public static boolean tulisFile(String url, String isiFile) { // methob tulis file 
+        boolean status = false;
+
+        try {
+            FileWriter fw = new FileWriter(url);
+            BufferedWriter bw = new BufferedWriter(fw);
+            bw.write(isiFile);
+            bw.close();
+            fw.close();
+            status = true;
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return status;
+    }
+}
