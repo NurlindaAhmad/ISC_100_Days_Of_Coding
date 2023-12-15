@@ -1,0 +1,12 @@
+public class Main {
+	public static void main(String[] args) {
+
+        StringBuilder diformat = new StringBuilder();
+        String nama = "linda";
+        int usia = 19;
+        diformat.append("Nama: ").append(nama).append(", Usia: ").append(usia);
+        System.out.println(diformat.toString());
+    }
+}
+
+	
