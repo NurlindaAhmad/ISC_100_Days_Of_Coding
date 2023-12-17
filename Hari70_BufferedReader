@@ -1,0 +1,38 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class MembacaFileText {
+
+    public static void main(String[] args) {
+        FileReader reader;
+        BufferedReader br = null;
+
+        try {
+            reader = new FileReader("tujuan.txt");
+            br = new BufferedReader(reader);
+
+            String line;
+
+            while ((line = br.readLine()) != null) {
+                System.out.println(line);
+            }
+
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(MembacaFileText.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(MembacaFileText.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            try {
+                if (br != null) {
+                    br.close();
+                }
+            } catch (IOException ex) {
+                Logger.getLogger(MembacaFileText.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }
+}
