@@ -1,0 +1,25 @@
+package com.example;
+
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
+import java.io.IOException;
+
+public class FileReadExample {
+
+    public static void main(String[] args) throws IOException {
+
+        long startTime, endTime;
+
+      
+        FileInputStream byteInput = new FileInputStream("input.txt");
+        System.out.println(byteInput.available());
+
+  
+        startTime = System.nanoTime();
+        System.out.println(byteInput.readAllBytes());
+        endTime = System.nanoTime();
+        System.out.println("Ukuran Data =" + (endTime - startTime));
+
+        byteInput.close();
+    }
+}
