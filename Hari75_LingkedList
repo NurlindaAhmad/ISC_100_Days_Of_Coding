@@ -1,0 +1,20 @@
+import java.util.LinkedList;
+public class Main {
+	public static void main(String[] args) {
+
+        LinkedList<String> buah = new LinkedList<String>();
+
+        buah.add("Apel");
+        buah.add("Pisang");
+        buah.add("Jeruk");
+
+        buah.addFirst("Mangga");
+
+        System.out.println("Daftar Buah:");
+        for (String buahan : buah) {
+            System.out.println(buahan);
+        }
+    }
+}
+
+	
