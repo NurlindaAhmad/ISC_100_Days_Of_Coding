@@ -1,0 +1,17 @@
+import java.util.Vector;
+
+public class VectorMergeExample {
+    public static void main(String[] args) {
+        Vector<String> vector1 = new Vector<>();
+        vector1.add("A");
+        vector1.add("B");
+
+        Vector<String> vector2 = new Vector<>();
+        vector2.add("C");
+        vector2.add("D");
+
+        vector1.addAll(vector2);
+
+        System.out.println("Hasil penggabungan Vector: " + vector1);
+    }
+}
