@@ -1,0 +1,21 @@
+import java.util.Vector;
+public class Main {
+	public static void main(String[] args) {
+
+        Vector<String> vector = new Vector<>();
+
+        vector.add("Mobil");
+        vector.add("Motor");
+        vector.add("Sepeda");
+
+        System.out.println("Isi Vector: " + vector);
+
+        String elemenPertama = vector.get(0);
+        System.out.println("Elemen pertama: " + elemenPertama);
+
+        vector.remove("Motor");
+        System.out.println("Setelah menghapus Motor: " + vector);
+    }
+}
+
+	
