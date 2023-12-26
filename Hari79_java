@@ -1,0 +1,19 @@
+import java.util.Vector;
+public class Main {
+	public static void main(String[] args) {
+
+        Vector<String> warna = new Vector<>();
+
+        warna.add("biru");
+        warna.add("putih");
+        warna.add("hitam");
+
+        System.out.println("Isi Vector: " + warna);
+
+        String elemenPertama = warna.get(0);
+        System.out.println("Elemen pertama: " + elemenPertama);
+
+        warna.remove("biru");
+        System.out.println("Setelah menghapus biru: " + warna);
+    }
+}
