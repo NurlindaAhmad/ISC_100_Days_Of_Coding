@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+import java.util.Vector;
+public class Main {
+	public static void main(String[] args) {
+    
+        ArrayList<Integer> daftarArrayList = new ArrayList<>();
+        daftarArrayList.add(1);
+        daftarArrayList.add(2);
+        daftarArrayList.add(3);
+
+        System.out.println("Elemen ArrayList:");
+        for (Integer elemen : daftarArrayList) {
+            System.out.println(elemen);
+        }
+
+        Vector<Double> vektor = new Vector<>();
+        vektor.add(1.1);
+        vektor.add(3.1);
+        vektor.add(5.2);
+
+        System.out.println("\nElemen Vector:");
+        for (Double elemen : vektor) {
+            System.out.println(elemen);
+        }
+    }
+}
