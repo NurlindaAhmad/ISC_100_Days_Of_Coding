@@ -1,0 +1,16 @@
+import java.util.Vector;
+public class Main {
+	public static void main(String[] args){
+        Vector<Character> vektorKarakter = new Vector<>();
+        vektorKarakter.add('A');
+        vektorKarakter.add('B');
+        vektorKarakter.add('C');
+
+        System.out.println("\nElemen Vector Karakter:");
+        for (Character elemen : vektorKarakter) {
+            System.out.println(elemen);
+        }
+    }
+}
+
+	
