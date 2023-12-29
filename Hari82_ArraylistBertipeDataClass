@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+
+class Mahasiswa {
+    private String nama;
+    private String nim;
+
+    public Mahasiswa(String nama, String nim) {
+        this.nama = nama;
+        this.nim = nim;
+    }
+
+    @Override
+    public String toString() {
+        return "Mahasiswa{" +
+                "nama='" + nama + '\'' +
+                ", nim='" + nim + '\'' +
+                '}';
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Mahasiswa> mahasiswaList = new ArrayList<>();
+
+        mahasiswaList.add(new Mahasiswa("Nurlinda Ahmad ", "D0222036"));
+        mahasiswaList.add(new Mahasiswa("Fajri mualim", "D0222372"));
+
+        for (Mahasiswa mahasiswa : mahasiswaList) {
+            System.out.println(mahasiswa);
+        }
+    }
+}
