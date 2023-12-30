@@ -1,0 +1,34 @@
+import java.util.ArrayList;
+
+class Data {
+    private String nama;
+    private int umur;
+
+    public Data(String nama, int umur) {
+        this.nama = nama;
+        this.umur = umur;
+    }
+
+    @Override
+    public String toString() {
+        return "Data{" +
+                "nama='" + nama + '\'' +
+                ", umur=" + umur +
+                '}';
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Data> dataList = new ArrayList<>();
+
+        dataList.add(new Data("aina", 19));
+        dataList.add(new Data("asdini", 19));
+
+        for (Data data : dataList) {
+            System.out.println(data);
+        }
+    }
+}
+
+	
