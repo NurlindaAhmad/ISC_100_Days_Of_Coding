@@ -1,0 +1,28 @@
+import java.util.LinkedList;
+public class Main {
+	public static void main(String[] args) {
+		
+        LinkedList<String> buah = new LinkedList<>();
+        
+        buah.add("Apel");
+        buah.add("Pisang");
+        buah.add("Jeruk");
+
+        System.out.println("Buah sebelum penghapusan: " + buah);
+        buah.remove("Pisang");
+        System.out.println("Setelah remove(\"Pisang\"): " + buah);
+
+        buah.remove(0);
+        System.out.println("Setelah remove(0): " + buah);
+
+        buah.removeFirst();
+        System.out.println("Setelah removeFirst(): " + buah);
+
+        buah.removeLast();
+        System.out.println("Setelah removeLast(): " + buah);
+
+        System.out.println("Apakah Buah kosong? " + buah.isEmpty());
+
+        System.out.println("Ukuran Buah: " + buah.size());
+    }
+}
