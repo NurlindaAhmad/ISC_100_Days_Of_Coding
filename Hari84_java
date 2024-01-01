@@ -1,0 +1,13 @@
+public class Main {
+	public static void main(String[] args) {
+
+        int tahunSaatIni = 2023;
+
+        int tahunBerikutnya = tahunSaatIni + 1;
+
+        System.out.println("Selamat tahun baru " + tahunBerikutnya + "!");
+    }
+}
+
+	
+	
