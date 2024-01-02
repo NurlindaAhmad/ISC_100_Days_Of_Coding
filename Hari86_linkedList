@@ -1,0 +1,21 @@
+import java.util.LinkedList;
+
+public class Main {
+	public static void main(String[] args) {
+        LinkedList<String> linkedList = new LinkedList<>();
+
+        linkedList.add("Mobil");
+        linkedList.add("Motor");
+        linkedList.add("Sepeda");
+
+        linkedList.set(1, "Truk");
+
+        boolean containsMotor = linkedList.contains("Motor");
+
+        linkedList.offer("Bus");
+        linkedList.offerFirst("Pesawat");
+        linkedList.offerLast("Kereta");
+
+        System.out.println("LinkedList setelah operasi: " + linkedList);
+    }
+}
