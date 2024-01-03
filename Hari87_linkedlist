@@ -1,0 +1,22 @@
+import java.util.LinkedList;
+public class Main {
+	public static void main(String[] args) {
+
+        LinkedList<String> buah= new LinkedList<>();
+
+        buah.add("Apel");
+        buah.add("Jeruk");
+        buah.add("Pisang");
+
+        buah.set(1, "Anggur");
+
+        boolean containsJeruk = buah.contains("Jeruk");
+
+        buah.offer("Mangga");
+        buah.offerFirst("Strawberry");
+        buah.offerLast("Durian");
+
+        System.out.println("LinkedList buah setelah operasi: " + buah);
+    }
+}
+
