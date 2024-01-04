@@ -1,0 +1,24 @@
+import java.util.LinkedList;
+
+public class ContohLinkedListBuah {
+
+    public static void main(String[] args) {
+        LinkedList<String> daftarBuah = new LinkedList<>();
+
+        daftarBuah.add("Apel");
+        daftarBuah.add("Jeruk");
+        daftarBuah.add("Pisang");
+
+        String buahPertama = daftarBuah.poll();
+        System.out.println("Buah yang dihapus menggunakan poll(): " + buahPertama);
+        System.out.println("Daftar buah setelah menggunakan poll(): " + daftarBuah);
+
+        String buahPertama2 = daftarBuah.pollFirst();
+        System.out.println("Buah yang dihapus menggunakan pollFirst(): " + buahPertama2);
+        System.out.println("Daftar buah setelah menggunakan pollFirst(): " + daftarBuah);
+
+        String buahTerakhir = daftarBuah.pollLast();
+        System.out.println("Buah yang dihapus menggunakan pollLast(): " + buahTerakhir);
+        System.out.println("Daftar buah setelah menggunakan pollLast(): " + daftarBuah);
+    }
+}
