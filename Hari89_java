@@ -1,0 +1,25 @@
+import java.util.LinkedList;
+
+public class ContohLinkedListKue {
+
+    public static void main(String[] args) {
+
+        LinkedList<String> daftarKue = new LinkedList<>();
+
+        daftarKue.add("Donat");
+        daftarKue.add("Brownies");
+        daftarKue.add("Kue Lapis");
+
+        String kuePertama = daftarKue.poll();
+        System.out.println("Kue yang dihapus menggunakan poll(): " + kuePertama);
+        System.out.println("Daftar kue setelah menggunakan poll(): " + daftarKue);
+
+        String kuePertama2 = daftarKue.pollFirst();
+        System.out.println("Kue yang dihapus menggunakan pollFirst(): " + kuePertama2);
+        System.out.println("Daftar kue setelah menggunakan pollFirst(): " + daftarKue);
+
+        String kueTerakhir = daftarKue.pollLast();
+        System.out.println("Kue yang dihapus menggunakan pollLast(): " + kueTerakhir);
+        System.out.println("Daftar kue setelah menggunakan pollLast(): " + daftarKue);
+    }
+}
