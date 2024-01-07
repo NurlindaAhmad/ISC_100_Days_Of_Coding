@@ -1,0 +1,22 @@
+import java.util.Stack;
+
+public class KataBendaStack {
+    public static void main(String[] args) {
+
+        Stack<String> kataBendaStack = new Stack<>();
+
+        kataBendaStack.push("Buku");
+        kataBendaStack.push("Meja");
+        kataBendaStack.push("Pena");
+
+        System.out.println("Kata benda dalam Stack: " + kataBendaStack);
+
+        String poppedKataBenda = kataBendaStack.pop();
+        System.out.println("Kata benda yang di-pop: " + poppedKataBenda);
+
+        System.out.println("Kata benda setelah operasi pop: " + kataBendaStack);
+
+        String peekedKataBenda = kataBendaStack.peek();
+        System.out.println("Kata benda paling atas tanpa di-pop: " + peekedKataBenda);
+    }
+}
