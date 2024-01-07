@@ -1,0 +1,22 @@
+import java.util.Stack;
+
+public class KataHariStack {
+    public static void main(String[] args) {
+        
+        Stack<String> hariStack = new Stack<>();
+
+        hariStack.push("Senin");
+        hariStack.push("Selasa");
+        hariStack.push("Rabu");
+
+        System.out.println("Kata hari dalam Stack: " + hariStack);
+
+        String poppedHari = hariStack.pop();
+        System.out.println("Kata hari yang di-pop: " + poppedHari);
+
+        System.out.println("Kata hari setelah operasi pop: " + hariStack);
+
+        String peekedHari = hariStack.peek();
+        System.out.println("Kata hari paling atas tanpa di-pop: " + peekedHari);
+    }
+}
