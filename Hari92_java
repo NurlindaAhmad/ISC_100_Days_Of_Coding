@@ -1,0 +1,25 @@
+import java.util.Stack;
+
+public class StackNamaOrang {
+    public static void main(String[] args) {
+      
+        Stack<String> stackNama = new Stack<>();
+
+        stackNama.push("linda");
+        stackNama.push("ayya");
+        stackNama.push("bisam");
+
+        System.out.println("Isi Stack Nama: " + stackNama);
+
+        String topNama = stackNama.peek();
+        System.out.println("Nama paling atas: " + topNama);
+
+        String poppedNama = stackNama.pop();
+        System.out.println("Nama yang dihapus: " + poppedNama);
+
+        System.out.println("Isi Stack Nama setelah penghapusan: " + stackNama);
+
+        boolean isEmpty = stackNama.isEmpty();
+        System.out.println("Apakah Stack Nama kosong? " + isEmpty);
+    }
+}
