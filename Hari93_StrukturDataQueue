@@ -1,0 +1,24 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Main {
+	public static void main(String[] args) {
+
+
+        Queue<String> hari = new LinkedList<>();
+
+        hari.add("Senin");
+        hari.add("Selasa");
+        hari.add("Rabu");
+
+        System.out.println("Queue: " + hari);
+        
+        String removeHari = hari.poll();
+        System.out.println("Hari yang dihapus: " + hari);
+
+        hari.add("Kamis");
+
+        System.out.println("Queue setelah perubahan: " + hari);
+    }
+}
+
