@@ -1,0 +1,22 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Main {
+	public static void main(String[] args) {
+
+        Queue<String> queue = new LinkedList<>();
+        queue.offer("Buku");
+        queue.offer("Laptop");
+        queue.offer("Pensil");
+
+        System.out.println("Isi awal queue: " + queue);
+        System.out.println("Kosong? " + queue.isEmpty());
+        System.out.println("Pertama: " + queue.peek());
+
+        String removedItem = queue.poll();
+        System.out.println("Dihapus: " + removedItem);
+        System.out.println("Isi setelah poll: " + queue);
+    }
+}
+
+	
