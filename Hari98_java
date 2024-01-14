@@ -1,0 +1,25 @@
+import java.util.HashSet;
+
+public class Main {
+	public static void main(String[] args) {
+
+        HashSet<String> benda = new HashSet<>();
+
+        benda.add("Meja");
+        benda.add("Kursi");
+        benda.add("Laptop");
+        benda.add("Buku");
+
+        if (benda.contains("Kursi")) {
+            System.out.println("HashSet berisi Kursi");
+        } else {
+            System.out.println("HashSet tidak berisi Kursi");
+        }
+
+        benda.remove("Laptop");
+        System.out.println("Setelah menghapus Laptop: " + benda);
+
+        benda.clear();
+        System.out.println("Setelah membersihkan HashSet: " + benda);
+    }
+}
