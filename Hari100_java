@@ -1,0 +1,106 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+class Biodata {
+    String nama;
+    int umur;
+
+    public Biodata(String nama, int umur) {
+        this.nama = nama;
+        this.umur = umur;
+    }
+}
+
+public class Main {
+    static ArrayList<Biodata> biodataList = new ArrayList<>();
+    static Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int pilihan;
+
+        do {
+            System.out.println("\nMenu CRUD Biodata:");
+            System.out.println("1. Insert");
+            System.out.println("2. Update");
+            System.out.println("3. Delete");
+            System.out.println("4. Tampilkan Biodata");
+            System.out.println("0. Keluar");
+            System.out.print("Pilih menu: ");
+            pilihan = scanner.nextInt();
+
+            switch (pilihan) {
+                case 1:
+                    insertBiodata();
+                    break;
+                case 2:
+                    updateBiodata();
+                    break;
+                case 3:
+                    deleteBiodata();
+                    break;
+                case 4:
+                    displayBiodata();
+                    break;
+                case 0:
+                    System.out.println("Program selesai.");
+                    break;
+                default:
+                    System.out.println("Pilihan tidak valid. Silakan coba lagi.");
+            }
+
+        } while (pilihan != 0);
+    }
+
+    static void insertBiodata() {
+        System.out.print("Masukkan nama: ");
+        String nama = scanner.next();
+        System.out.print("Masukkan umur: ");
+        int umur = scanner.nextInt();
+
+        Biodata biodata = new Biodata(nama, umur);
+        biodataList.add(biodata);
+
+        System.out.println("Biodata berhasil disimpan.");
+    }
+
+    static void updateBiodata() {
+        displayBiodata();
+        System.out.print("Masukkan indeks biodata yang akan diupdate: ");
+        int indeks = scanner.nextInt();
+
+        if (indeks >= 0 && indeks < biodataList.size()) {
+            System.out.print("Masukkan nama baru: ");
+            String nama = scanner.next();
+            System.out.print("Masukkan umur baru: ");
+            int umur = scanner.nextInt();
+
+            Biodata biodata = new Biodata(nama, umur);
+            biodataList.set(indeks, biodata);
+
+            System.out.println("Biodata berhasil diupdate.");
+        } else {
+            System.out.println("Indeks tidak valid.");
+        }
+    }
+
+    static void deleteBiodata() {
+        displayBiodata();
+        System.out.print("Masukkan indeks biodata yang akan dihapus: ");
+        int indeks = scanner.nextInt();
+
+        if (indeks >= 0 && indeks < biodataList.size()) {
+            biodataList.remove(indeks);
+            System.out.println("Biodata berhasil dihapus.");
+        } else {
+            System.out.println("Indeks tidak valid.");
+        }
+    }
+
+    static void displayBiodata() {
+        System.out.println("\nDaftar Biodata:");
+        for (int i = 0; i < biodataList.size(); i++) {
+            Biodata biodata = biodataList.get(i);
+            System.out.println("Indeks " + i + ": " + biodata.nama + ", " + biodata.umur + " tahun");
+        }
+    }
+}
